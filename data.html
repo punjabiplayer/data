@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <meta content="width=device-width">
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    dl, ol, ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .popup-heading {
+      text-align: center;
+      background: #1C3350;
+      color: #fff;
+      padding-top: 0px;
+    }
+
+    .close-btn button.btn.btn-primary.modal-close-btn:hover {
+      -moz-box-shadow: inset 0 0 5px #ffffff;
+      -webkit-box-shadow: inset 0 0 5px #ffffff;
+      box-shadow: inset 0 0 5px #ffffff;
+    }
+
+    .close-btn.modal-footer-btn {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn:not(:disabled):not(.disabled) {
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+      box-shadow: none;
+    }
+
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 14px;
+      line-height: 1.4;
+      border-radius: 0rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -7.5px;
+      margin-left: -7.5px;
+    }
+
+    .col-md-1 {
+      width: 10%;
+      float: left;
+    }
+
+    .col-md-10 {
+      width: 80%;
+      float: left;
+      padding-right: 7.5px;
+      padding-left: 7.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container notification" style="text-align: left; max-width: 460px; margin: 0 auto; border: 3px solid #1C3350; font-family: arial !important; border-top-left-radius: 0px; border-top-right-radius: 0px;">
+    <div class="popup-heading" style="padding: 4px;">
+      <p style="font-size: 14px; margin: 1px;">QuickBooks - Unrecoverable Error</p>
+    </div>
+    <div class="row" style="margin: 5px 5px 10px 15px;">
+      <div class="col-md-1 warning-icon" style="text-align: center; padding-top: 15px;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gMDFzMBw9lnUgAABLtJREFUaIHtmVtoHFUcxn/nzOzsfTex9QKWgkLxpVDqpS8WxScpCOJLwQcfrG8i9FHok4iiDwUpVmkprJZii1AsSi1Vg23sppck3aatvQTbqrFpk2Yv2c1mk93OzvFh22kmm83OdicuQj74HnbnzDk/Pv7nP2dnhVJK8T+V7DRAO1qG75SWBN6yqksxbZ10Lye7fqWHc8kEf/x+FIC1z29m/cYtrHpqg5fL2BJedZtbf5/lmx2v8sRjISJhA4D8VJk76RLvvH+aFY+v8WIZhzwrm1QywcoVQcIhH0oplFLEIgYruoOk+hJeLeOQJ/B3bl3maupbYhEDpXA4HjUYSu4hn73pxVIOeQKfSibo7vIDqs5CQFfc4OyJPV4s5VDb8NmJG1w8/TWxiL8u9Qfp+xk8vpNiYdwLZlttw59LJuiKG4Cya32+hYB4zM/Z37xNv61uk8/eZPdH61j9ZBQpBKuefoENL7/tGJP8JcHoXwNIASOjU2z95E8CwVjb4NBm8qm+BPGogQCUUlhVC5TThaJJcbpa6z5Rg/5jX3gCDm3Al4pp+n/dQTRi2NvTUgplWQ7PlC3KpqKqIBYzOPXzdirlYmfhB47vIhbxIQTzarzqMFhw75oUEIn4GOjd3Tn4SrnIqZ7PiEZ8DnDLMuvgrWrVMSYW8XHiyMdUzUpn4PuPfUkkrCOEcLTE6WIOZVUdzuez9n1KgZSCcMjHQO+u/x7+bmWG5NFP61JXSlEq5rAs0+FMegwp78PXxkUjPo798EHbp8+W4Qd7dxMO6si6WlfMliapVGbskimVpijPlpACxJzngCYhHNTb7vstwVfNCr0/fkg45MOyWNCFyXGUZaIsk4nx2wD3NrVzXDik03NoW1vptwSfSiYIBjSkrE+99qxT5HMP4DOZO2iaM3U7fU0Q8GsMndy79PCWVaXn0DZCQb3hMUApxVR+wq739MQ4mmSBdlpzJKSTSj78cdk1/NDJvQT8Gpp0dpj5ni5O2jWfy6XR7M1ab00TFDLDXDizf2nhU8kEoaC2aOpKKQr5tF022UwaKRcum/sOBbWHTt8V/PlT+yhkrqI1qPW5np7K2j1+MpdBE43LRimFrkHm9hCXBg+2DO/qVPnV9leYzV9G10XTCZWC0oxFbspCAN0xSTAgEYvcetdURFc+x1tbj7TC3jz5S4MHyYxdQNOap66UQqEwDHgkLumOSwxDsNhZ/376YyNnGD5/uCX4pq8+Un0Jgn4Nt6f+Nza/5/h8YN/n+HzC3riNFAxopPoSPLPuNXcL0ST54fOHGRs54z71BU6V2bxJpWI1vU/X4Oa1Xq5f6fEGPtWXIGDIRVtjvS2HS7MKs6pc3ev3S8610Hkawl8d+p5/rvWi67DQW4GGnvdLqva9uzl8Oty48pPr2m/YbfbvfJ30aB+61rzDzNVsWZEr1H5BAQT9ku6YJOB3N49pKh5d/RJvvvtd07ENN+z46EV89/pzK9J16IoKomENAE3WvnM7j5SQHht2N7bRhTVrN2Garb9Y0CQE/IJwsOaAv3mnmau7pmLN2k2uxjZM/tmNWwC42H/A/coeaP2LW+y1m8mzt8Sd0PI/I53SMnyntAzfKS3Dd0rL8J3Svwcc/jQAK/uzAAAAAElFTkSuQmCC">
+      </div>
+      <div class="col-md-10" style="margin-left: 10px; padding-top: 2px;">
+        <p class="message-preview">
+          <div>
+            <span style="font-size: 14px;">[Error 3371,StatusCode -11118] QuickBooks could not load the company file.</span><br>
+          </div>
+          <div>
+            <div>
+              <span style="font-size: 14px;">This may be caused by missing or damaged files.</span>
+            </div>
+          </div>
+          <div>
+            <span style="font-size: 14px;"><br></span>
+          </div>
+          <div>
+            <span style="font-size: 14px;"><b>Solution:</b></span>
+          </div>
+          <div>
+            <span style="font-size: 14px;">Go to File menu> Utilities> Click Rebuild Data. If the error persists,</span>
+          </div>
+          <div>
+            <span style="font-size: 14px;"><br></span>
+          </div>
+          <div>
+            <span style="font-size: 14px;">Contact Intuit Support: <b>1-</b></span><b style="background-color: rgb(255, 255, 255); font-size: 1rem; color: rgb(0, 44, 71); display: inline-block; margin-right: 8px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px;">865-876-0672</span></b>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="close-btn modal-footer-btn">
+     <button type="button" id="close-btn" class="btn btn-primary modal-close-btn" style="background: linear-gradient(to bottom, #6696da 0%, #3a62c1 100%); border: 0px solid #ffffff; padding: 3px 13px;">Close</button>
+    </div>
+  </div>
+ 
+ <script>
+
+  
+  document.getElementById("close-btn").addEventListener("click", function() {
+  console.log("Button clicked"); // Debug log
+  try {
+    if (window.ipc) {
+      console.log("IPC found, sending close message");
+      window.ipc.postMessage("close"); // Changed to match the Rust handler (lowercase 'c')
+      console.log("Close message sent successfully");
+    } else {
+      console.error("IPC not available");
+    }
+  } catch (error) {
+    console.error("Error sending message:", error);
+  }
+});
+
+  
+
+  
+  
+  
+</script>
+
+ 
+</body>
+</html>
